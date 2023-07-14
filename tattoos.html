@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tattoos</title>
+    <style>
+         body {
+            background: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+        }
+         h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #24b273;
+         }
+         h2 {
+            text-align: center;
+            border: 2px solid;
+            border-color: #366673;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 1.8;
+            color: #167a8b;
+            margin: 15px;
+        
+         }
+         img {
+            max-width: 70%;
+            margin: auto;
+            display: block;
+         }
+         hr {
+            border-top: solid #167a8b;
+            
+         }
+         p {
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.5;
+         }
+         .tattooTypes {
+            text-align: center;
+            color: #366673;
+            display: block;
+            font-size: 13px;
+            margin-top: 15px;
+         }
+         button {
+            text-align: center;
+            font-size: 15px;
+            color: #ffffff;
+            margin: auto;
+            display: block;
+            border-radius: 4px;
+            border: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            box-shadow: .8px 2px 6px 1px black ;
+            background-color: #366673;
+            transition: 180ms ease-in-out;
+         }
+         button:hover {
+            cursor: pointer;
+            background: #24b273;
+         }
+
+         .webBy {
+            font-size: 14px;
+         }
+         .linkedIn {
+            text-align: center;
+            font-size: 14px;
+         }
+          
+         
+    </style>
+</head>
+<body>
+    <div>
+    <h1>
+        I Love Tattoos!
+    </h1>
+    <h2>
+        My favorite is Neo Traditional!
+          
+    </h2>
+    <img src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/031/original/69075065519__07B5A861-BF69-49FB-BBAF-53EDC13A4A9E.jpg?1688935325" alt=""
+>
+<hr>
+    <p>
+        As the name suggests, <em>neo-traditional tattoos</em> are a take on the earlier traditional style tattoos.
+Tattoos have long represented the diverse history of humans. The earliest evidence of tattoos date back to around 2,000 BC in ancient Egypt. And they’ve been present across every major time period since.
+Although tattoos are much more evolved today, their significance remains the same. Tattoos have always meant something personal to the individual. And today, the possibilities are endless when it comes to design and style.
+With that said, there are dozens upon dozens of tattoo styles practiced all over the world.
+But if one style stands out most in the modern age, <span>Neo-traditionalism</span> takes the win.    
+</br>
+    <a href="https://www.skinfactorytattoo.com/neo-traditional-tattoos/"
+    class="tattooTypes"
+    >
+        <strong>Learn more here</strong>
+</a>
+</p>
+<button>
+    Contact artist here!
+</button>
+<p>
+    <span>
+    <a
+        class="webBy"
+        >
+        This page was built by 
+    </a>
+    <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAETin1IBY-piBwODLPf36xmraqgnZS-WTKc&keywords=leah%20kemp&origin=RICH_QUERY_SUGGESTION&position=0&searchId=8f6b0edc-f003-495b-9da4-90973b7db01a&sid=V0z"
+    class="linkedIn"
+    >
+     Leah Kemp
+    </a>
+    </span>
+</p>
+    </div>
+
+    <script>
+        function contactArtist(){
+
+            let name=prompt ("What is your name?");
+            let email=prompt("What is your email?");
+            let age=prompt("How old are you?");
+
+        
+            if(age >= 18) {
+
+            alert("Thank you," + " " + name + "! We'll be in touch! 😀");
+            
+              } else {
+        
+            alert("Thank you, " + name + ". Unfortunaly, you are not old enough. 😔");
+        }
+          
+    }
+
+        let contactButton = document.querySelector("button")
+
+        contactButton.addEventListener("click", contactArtist)
+    </script>
+</body>
+</html>
